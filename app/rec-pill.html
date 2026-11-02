@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+<title>录制中</title>
+<style>
+  @font-face { font-family: "IBM Plex Mono"; src: url(fonts/ibm-plex-mono-latin-500-normal.woff2) format('woff2'); font-weight: 500; }
+  html, body { margin: 0; height: 100%; background: transparent; overflow: hidden; user-select: none; }
+  body { display: flex; align-items: center; justify-content: flex-end; }
+  /* the same footprint and voice as the title-bar icons it stands in for */
+  button {
+    height: 100%; display: flex; align-items: center; gap: 8px; padding: 0 10px; border: 0; border-radius: 8px;
+    background: transparent; color: #5d564c; cursor: pointer;
+    font: 500 10.5px/1 "IBM Plex Mono", Consolas, monospace; letter-spacing: .08em; font-variant-numeric: tabular-nums;
+    transition: background .2s, color .2s;
+  }
+  button:hover { background: rgba(30, 27, 23, .06); color: #1e1b17; }
+  .dot { position: relative; width: 18px; height: 18px; flex: none; }
+  .dot::before { content: ''; position: absolute; inset: 1.8px; border-radius: 50%; border: 1.5px solid rgba(214, 64, 44, .42); }
+  .dot::after { content: ''; position: absolute; inset: 6px; border-radius: 50%; background: #d6402c; animation: pulse 1.8s ease-in-out infinite; }
+  button:hover .dot::after { inset: 5.5px; border-radius: 1.5px; animation: none; }
+  .stop { display: none; letter-spacing: .16em; font-family: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif; font-size: 11px; }
+  button:hover .time { display: none; }
+  button:hover .stop { display: block; }
+  body.dark button { color: #b9b1a5; }
+  body.dark button:hover { background: rgba(255, 255, 255, .08); color: #fff; }
+  @keyframes pulse { 50% { opacity: .3; } }
+</style>
+</head>
+<body>
+<button id="stop" title="结束录屏 · Ctrl+Shift+R"><i class="dot"></i><span class="time">00:00</span><span class="stop">结束</span></button>
+<script src="js/rec-pill.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+[
+ {
+  "id": "cinestill_800t",
+  "name": "CineStill 800T",
+  "ev": 2.74,
+  "grey": 116.6,
+  "print": "kodak_2383",
+  "scan": false
+ },
+ {
+  "id": "fujifilm_c200",
+  "name": "Fujifilm C200",
+  "ev": 2.74,
+  "grey": 117.7,
+  "print": "fujifilm_crystal_archive_typeii",
+  "scan": false
+ },
+ {
+  "id": "fujifilm_neopan_acros_100_ii",
+  "name": "Fujifilm Neopan 100 Acros II",
+  "ev": 2.74,
+  "grey": 118.8,
+  "print": "ilford_multigrade_iv_rc",
+  "scan": false
+ },
+ {
+  "id": "fujifilm_pro_400h",
+  "name": "Fujifilm Pro 400H",
+  "ev": 2.74,
+  "grey": 118.3,
+  "print": "fujifilm_crystal_archive_typeii",
+  "scan": false
+ },
+ {
+  "id": "fujifilm_provia_100f",
+  "name": "Fujifilm Provia 100F",
+  "ev": 2.74,
+  "grey": 118.9,
+  "print": "kodak_portra_endura",
+  "scan": true
+ },
+ {
+  "id": "fujifilm_velvia_100",
+  "name": "Fujifilm Velvia 100",
+  "ev": 2.74,
+  "grey": 118.6,
+  "print": "kodak_portra_endura",
+  "scan": true
+ },
+ {
+  "id": "fujifilm_xtra_400",
+  "name": "Fujifilm X-Tra 400",
+  "ev": 2.74,
+  "grey": 118,
+  "print": "fujifilm_crystal_archive_typeii",
+  "scan": false
+ },
+ {
+  "id": "ilford_hp5_plus_400",
+  "name": "Ilford HP5 Plus 400",
+  "ev": 2.74,
+  "grey": 118.7,
+  "print": "ilford_multigrade_iv_rc",
+  "scan": false
+ },
+ {
+  "id": "kodak_ektachrome_100",
+  "name": "Kodak Ektachrome 100",
+  "ev": 2.74,
+  "grey": 119,
+  "print": "kodak_portra_endura",
+  "scan": true
+ },
+ {
+  "id": "kodak_ektar_100",
+  "name": "Kodak Ektar 100",
+  "ev": 2.74,
+  "grey": 117.1,
+  "print": "kodak_portra_endura",
+  "scan": false
+ },
+ {
+  "id": "kodak_gold_200",
+  "name": "Kodak Gold 200",
+  "ev": 2.74,
+  "grey": 117.6,
+  "print": "kodak_portra_endura",
+  "scan": false
+ },
+ {
+  "id": "kodak_kodachrome_64",
+  "name": "Kodak Kodachrome 64",
+  "ev": 2.74,
+  "grey": 118.5,
+  "print": "kodak_portra_endura",
+  "scan": true
+ },
+ {
+  "id": "kodak_portra_160",
+  "name": "Kodak Portra 160",
+  "ev": 2.74,
+  "grey": 117.6,
+  "print": "kodak_portra_endura",
+  "scan": false
+ },
+ {
+  "id": "kodak_portra_400",
+  "name": "Kodak Portra 400",
+  "ev": 2.74,
+  "grey": 117.4,
+  "print": "kodak_portra_endura",
+  "scan": false
+ },
+ {
+  "id": "kodak_portra_800",
+  "name": "Kodak Portra 800",
+  "ev": 2.74,
+  "grey": 117.5,
+  "print": "kodak_portra_endura",
+  "scan": false
+ },
+ {
+  "id": "kodak_portra_800_push1",
+  "name": "Kodak Portra 800 (Push 1)",
+  "ev": 2.74,
+  "grey": 116.9,
+  "print": "kodak_portra_endura",
+  "scan": false
+ },
+ {
+  "id": "kodak_portra_800_push2",
+  "name": "Kodak Portra 800 (Push 2)",
+  "ev": 2.74,
+  "grey": 115.9,
+  "print": "kodak_portra_endura",
+  "scan": false
+ },
+ {
+  "id": "kodak_tmax_100",
+  "name": "Kodak T-Max 100",
+  "ev": 2.74,
+  "grey": 118.8,
+  "print": "ilford_multigrade_iv_rc",
+  "scan": false
+ },
+ {
+  "id": "kodak_tri_x_400",
+  "name": "Kodak Tri-X 400",
+  "ev": 2.74,
+  "grey": 118.8,
+  "print": "ilford_multigrade_iv_rc",
+  "scan": false
+ },
+ {
+  "id": "kodak_ultramax_400",
+  "name": "Kodak Ultramax 400",
+  "ev": 2.74,
+  "grey": 117.5,
+  "print": "kodak_portra_endura",
+  "scan": false
+ },
+ {
+  "id": "kodak_verita_200d",
+  "name": "Kodak Verita 200D",
+  "ev": 2.74,
+  "grey": 116.8,
+  "print": "kodak_2383",
+  "scan": false
+ },
+ {
+  "id": "kodak_vision3_200t",
+  "name": "Kodak Vision3 200T",
+  "ev": 2.74,
+  "grey": 116.9,
+  "print": "kodak_2383",
+  "scan": false
+ },
+ {
+  "id": "kodak_vision3_250d",
+  "name": "Kodak Vision3 250D",
+  "ev": 2.74,
+  "grey": 116.6,
+  "print": "kodak_2383",
+  "scan": false
+ },
+ {
+  "id": "kodak_vision3_500t",
+  "name": "Kodak Vision3 500T",
+  "ev": 2.74,
+  "grey": 116.6,
+  "print": "kodak_2383",
+  "scan": false
+ },
+ {
+  "id": "kodak_vision3_50d",
+  "name": "Kodak Vision3 50D",
+  "ev": 2.74,
+  "grey": 116.9,
+  "print": "kodak_2383",
+  "scan": false
+ }
+]
