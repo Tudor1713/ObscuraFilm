@@ -3,10 +3,10 @@ const { packager } = require('@electron/packager');
 const path = require('path');
 const fs = require('fs');
 
-// copies SpektraLab's native renderer (GPL-3.0, https://github.com/JamesQiu2005/SpektraLab) and the engine
-// data it needs into build/runtime/spektralab, which goes into the package as resources/spektralab. The
-// install is SPEKTRALAB_DIR or a SpektraLab folder beside this project; without one the package has no
-// engine and shows the LUTs only.
+// SpektraLab's native renderer (GPL-3.0, https://github.com/JamesQiu2005/SpektraLab) and the engine data it
+// needs live in build/runtime/spektralab (checked in; see SOURCE.md there) and go into the package as
+// resources/spektralab. A SpektraLab install at SPEKTRALAB_DIR or beside this project refreshes that copy
+// first; with neither, the checked-in copy is used as it is.
 function prepareEngine(root) {
   const source = process.env.SPEKTRALAB_DIR || path.join(root, '..', 'spektralab');
   if (!fs.existsSync(path.join(source, 'spektralab-host.exe'))) {

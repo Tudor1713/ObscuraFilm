@@ -22,7 +22,7 @@ const dirs = () => {
 };
 
 // the packaged app carries the engine in resources\spektralab (tools/pack.js); from source it is
-// SPEKTRALAB_DIR, else the copy pack.js made in build\runtime, else a SpektraLab folder beside this one
+// SPEKTRALAB_DIR, else the copy checked in under build\runtime, else a SpektraLab folder beside this one
 function engineDir() {
   const near = [path.join(__dirname, 'build', 'runtime', 'spektralab'), path.join(__dirname, '..', 'spektralab')];
   const dir = app.isPackaged ? path.join(process.resourcesPath, 'spektralab')

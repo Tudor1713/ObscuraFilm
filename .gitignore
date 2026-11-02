@@ -1,7 +1,5 @@
 node_modules/
 dist/
-# SpektraLab's native host, copied in by tools/pack.js (GPL-3.0, from its own release)
-build/runtime/
 # machine-local settings (see README)
 local.json
 # LUT baking intermediates (tools/spektralab)

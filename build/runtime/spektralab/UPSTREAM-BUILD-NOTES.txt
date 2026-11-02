@@ -1,0 +1,6 @@
+Source: https://github.com/JamesQiu2005/SpektraLab
+Commit: 2ca735ad60a998e925bf346f57d80012bdb5c6bf
+PR: https://github.com/JamesQiu2005/SpektraLab/pull/37
+Windows GUI and native host retained from the validated exposure-hold v2 / filmstrip-wheel build. Runtime sources are committed here; upstream CI-only changes are included.
+Validation: TypeScript, ESLint, 413 unit tests (1 skipped), 56 browser tests, 45 native checks (28 rerun with corrected MinGW runtime PATH).
+Included 102MP timing/memory report is historical beta.1 evidence, not a new performance measurement. No user photographs included.

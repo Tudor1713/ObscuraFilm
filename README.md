@@ -31,14 +31,11 @@ npm install
 npm start
 ```
 
-### 胶片引擎（可选，推荐）
+### 胶片引擎
 
-照片的完整胶片效果需要 SpektraLab 的原生渲染器（`spektralab-host.exe`，GPL-3.0，需支持 Vulkan 的显卡驱动）。本仓库不包含它。下载或自行编译 SpektraLab 的 Windows 版，然后任选其一：
+仓库已内置 SpektraLab 的原生渲染器（`build/runtime/spektralab/spektralab-host.exe` 及其引擎数据，GPL-3.0，源码版本与许可见 [SOURCE.md](build/runtime/spektralab/SOURCE.md)），克隆后直接可用。它需要支持 Vulkan 的显卡驱动；跑不起来时软件照常运行，胶片效果退回色表预览（只有色调，没有颗粒与光晕）。
 
-- 把它放在本项目旁边，文件夹名为 `spektralab`（即 `../spektralab/spektralab-host.exe`）；
-- 或设置环境变量 `SPEKTRALAB_DIR` 指向它所在的文件夹。
-
-没有引擎时软件照常运行，胶片效果退回色表预览（只有色调，没有颗粒与光晕）。
+想换用别的 SpektraLab 版本：把它放在本项目旁边、文件夹名为 `spektralab`，或设置环境变量 `SPEKTRALAB_DIR` 指向它；`npm run pack` 会用它刷新内置的那份。
 
 ### 打包
 
@@ -46,7 +43,7 @@ npm start
 npm run pack
 ```
 
-生成 `dist/暗盒-win32-x64/暗盒.exe`。找得到 SpektraLab 时，引擎和它需要的数据、许可证会一起放进 `resources/spektralab/`。
+生成 `dist/暗盒-win32-x64/暗盒.exe`，引擎和它需要的数据、许可证一起放进 `resources/spektralab/`。
 
 ### 本机设置
 
@@ -67,11 +64,14 @@ npm run pack
 
 - `app/`：渲染进程。`js/app.js` 场景与交互，`film.js` 胶片几何与着色器，`canister.js` / `stocks.js` 暗盒与标签，`lightbox.js` / `grade.js` 放大与显影，`sims.js` 胶片列表与色表，`prints.js` 向引擎要成片，`store.js` 存储，`heic.js` HEIC 解码，`recorder.js` 录屏。
 - `main.js` / `preload.js`：主进程（`anhe://` 协议、录屏、标题栏）；`lab.js`：SpektraLab 引擎进程、渲染队列与缓存。
+- `build/runtime/spektralab/`：内置的 SpektraLab 渲染器与引擎数据（第三方，GPL-3.0）。
 - `tools/capture.js`：无头截图测试脚本；`tools/spektralab/`：重新烘焙 `app/luts` 色表；`tools/fetch-demo.sh`：下载示例照片。
 
 ## 许可
 
 本项目以 [GNU GPL v3](LICENSE) 发布。
+
+- 内置的 SpektraLab 渲染器（`build/runtime/spektralab/`）来自 [JamesQiu2005/SpektraLab](https://github.com/JamesQiu2005/SpektraLab) 提交 `2ca735a`，GPL-3.0，未作修改；对应源码与第三方许可见 [SOURCE.md](build/runtime/spektralab/SOURCE.md)。
 
 - `app/luts/*.png` 由 SpektraLab 引擎和 [spektrafilm](https://github.com/andreavolpato/spektrafilm) 的胶片光谱数据生成，按 **CC BY-SA 4.0** 提供，详见 [app/luts/NOTICE.md](app/luts/NOTICE.md)。
 - 示例照片来自 Unsplash，按 Unsplash License 使用，作者见 [app/demo/CREDITS.md](app/demo/CREDITS.md)。
