@@ -4,6 +4,15 @@
 
 A desktop photo album that keeps your pictures on 35 mm film: twelve canisters on a shelf, a strip you pull out frame by frame, and a darkroom where each frame develops from black and white into the film you chose — printed by SpektraLab's spectral film engine, grain and halation included. Windows, Electron + three.js.
 
+## Apple 芯片 Mac 版
+
+已公开发布 [Mac 安装包与完整源码（v1.1.0-macos.1）](https://github.com/Tudor1713/ObscuraFilm/releases/tag/v1.1.0-macos.1)。支持 M 系列芯片、macOS 15+，内置 SpektraLab 的 ARM64 C++ / Metal 胶片引擎，沿用本项目的原有前端与相册交互。
+
+- 安装：下载 `ObscuraFilm-1.1.0-mac-arm64.dmg`，将「暗盒.app」拖入 Applications。
+- Mac 完整源码：下载 Release 附件 `ObscuraFilm-macOS-source.zip`，包含引擎源码、Metal 内核、运行资源、构建脚本与许可证；保留可执行权限。解压后见 `README-macOS.md`。
+- 本版为 ad-hoc 本地签名，未经 Apple Developer ID 公证；首次打开方式见 Release 说明。
+- Mac 源码目前通过 Release 完整源码附件分发；默认分支与下文仍为原 Windows 版。GitHub 自动生成的 Source code 是默认分支快照。
+
 ![胶卷柜](docs/shelf.jpg)
 
 | 抽出底片 | 选胶片 |
